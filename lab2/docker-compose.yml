@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  game-2048:
+    image: game-2048:latest
+    container_name: game-2048
+    ports:
+      - "16666:8080"
+    build:
+      context: .
+      dockerfile: ./Dockerfile
